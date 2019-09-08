@@ -1,7 +1,11 @@
 set nu ai ci si sts=4 ts=4 sw=4 mouse=a
+set fileencoding=utf-8,ucs-bom,gb18030,gbk,gb2312,cp936
+set termencoding=utf-8
+set encoding=utf-8
 
 nmap<F3> : vs %<.in <CR>
 nmap<F4> : !clear && time ./%< < %<.in <CR>
+nmap<F5> : !javac %&&java %:r <CR>
 
 nmap<F9> : !clear && g++ -std=c++11 % -o %< <CR>
 nmap<F10> : !clear && time ./%< <CR>
