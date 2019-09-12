@@ -1,0 +1,24 @@
+syntax on
+set backspace=indent,eol,start
+set nu si ci ai mouse=a sw=4 sts=4 ts=4
+set hlsearch incsearch
+colorscheme desert
+set guifont=Consolas:h14
+set report=0 showmatch cursorline
+set guioptions-=m
+set guioptions-=T
+nmap<C-A> ggvG
+vmap<C-C> "*y
+nmap<F3> : vs %<.in <CR>
+nmap<F5> : vs %<.out <CR>
+nmap<F10> : !%< <CR>
+nmap<F4> : !%< < %<.in <CR>
+nmap<F9> : !g++ % -o %< <CR>
+:cd E:\software\GVIM\code
+""inoremap ( ()<ESC>i
+""inoremap [ []<ESC>i
+""inoremap { {}<ESC>i
+""inoremap " ""<ESC>i
+""inoremap ' ''<ESC>i
+
+au GUIEnter * call libcallnr("vimtweak.dll", "SetAlpha", 234)
