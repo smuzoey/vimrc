@@ -22,3 +22,5 @@ nmap<F9> : !g++ % -o %< <CR>
 ""inoremap ' ''<ESC>i
 
 au GUIEnter * call libcallnr("vimtweak.dll", "SetAlpha", 234)
+
+test
